@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="digite">Enter an email for validation</string>
+    <string name="verificar">Verify</string>
+    <string name="exemplo">example@email.com</string>
+</resources>
