@@ -3,4 +3,17 @@
     <string name="digite">Enter an email for validation</string>
     <string name="verificar">Verify</string>
     <string name="exemplo">example@email.com</string>
+    <string name="domain">Domain</string>
+    <string name="is_free">Is free?</string>
+    <string name="is_syntax">Syntactically correct?</string>
+    <string name="is_domain">Valid MX record</string>
+    <string name="is_smtp">Connection to SMTP server?</string>
+    <string name="is_verified">Does email exist?</string>
+    <string name="is_server_down">Down server</string>
+    <string name="is_greylisted">Is blacklisted</string>
+    <string name="is_disposable">Is disposable?</string>
+    <string name="is_role">Based on a job role?</string>
+    <string name="time_taken">Waiting time</string>
+    <string name="status">Is valid?</string>
+    <string name="app_name">Email validator</string>
 </resources>

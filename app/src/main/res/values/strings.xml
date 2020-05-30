@@ -1,6 +1,18 @@
 <resources>
-    <string name="app_name" translatable="false">Validador De Email</string>
+    <string name="app_name">Validador De Email</string>
     <string name="digite">Digite um email para validação</string>
     <string name="verificar">Verificar</string>
     <string name="exemplo">exemplo@email.com</string>
+    <string name="domain">Domínio</string>
+    <string name="is_free">É gratuito?</string>
+    <string name="is_syntax">Sintaticamente correto?</string>
+    <string name="is_domain">Registro MX válido?</string>
+    <string name="is_smtp">Conexão com servidor SMTP?</string>
+    <string name="is_verified">Email existente?</string>
+    <string name="is_server_down">Servidor inativo</string>
+    <string name="is_greylisted">Está na lista negra</string>
+    <string name="is_disposable">É descartável?</string>
+    <string name="is_role">Baseado em algum cargo?</string>
+    <string name="time_taken">Tempo de espera</string>
+    <string name="status">É válido?</string>
 </resources>

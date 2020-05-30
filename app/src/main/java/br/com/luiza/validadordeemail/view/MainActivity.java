@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void verificar(View view) {
-        control.pegaDadosTela(etEmail.getText().toString());
+        control.verificarEmail(etEmail.getText().toString());
     }
 
     public EditText getEtEmail() {

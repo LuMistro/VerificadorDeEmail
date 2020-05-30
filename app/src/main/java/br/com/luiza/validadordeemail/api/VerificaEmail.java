@@ -1,7 +1,6 @@
 package br.com.luiza.validadordeemail.api;
 
 import android.os.StrictMode;
-import android.provider.ContactsContract;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,11 +12,15 @@ import java.net.URLEncoder;
 import java.util.Hashtable;
 import java.util.Map;
 
+import com.google.gson.Gson;
+
 import br.com.luiza.validadordeemail.model.Email;
 
 public class VerificaEmail {
 
-    public String buscaEmail(String email) {
+    Gson gson = new Gson();
+
+    public Email buscaEmail(String email) {
         try {
             if (android.os.Build.VERSION.SDK_INT > 9) {
                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -45,13 +48,12 @@ public class VerificaEmail {
 
             BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
 
-            String output;
+            Email emailFinal = new Email();
+            emailFinal = gson.fromJson(br, Email.class);
+            System.out.println(emailFinal);
 
-            while ((output = br.readLine()) != null) {
-                System.out.println(output);
-                return output;
-            }
             conn.disconnect();
+            return emailFinal;
         } catch (
                 MalformedURLException e) {
             e.printStackTrace();
